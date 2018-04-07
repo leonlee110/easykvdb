@@ -16,7 +16,7 @@ type StoreObject struct {
 
 func NewStoreObject(path string, config *gorocksdb.Options) *StoreObject {
     var dbpath string
-    if dbpath == "" {
+    if path == "" {
         dbpath = "./db"
     } else {
         dbpath = path
